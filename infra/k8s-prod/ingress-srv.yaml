@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-    - host: tickethub.dzon
+    - host: www.dzony12-tickets.website
       http:
         paths:
           - path: /api/users
