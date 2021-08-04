@@ -28,14 +28,13 @@ router.post(
     if (!order) throw new NotFoundError();
     if (order.userId !== req.currentUser!.id) throw new forbiddenError();
     if (order.status === OrderStatus.Cancelled)
-      throw new BadRequestError("Caanot pay for an cancelled order");
+      throw new BadRequestError("Can not pay for an cancelled order");
 
     const charge = await stripe.charges.create({
       currency: "pln",
       amount: order.price * 100,
       source: token,
     });
-
     const payment = await Payment.build({
       orderId,
       stripeId: charge.id,
