@@ -3,7 +3,7 @@ import { app } from "./app";
 
 // Startup function
 const start = async () => {
-  console.log("starting up.....");
+  console.log("starting up........");
   //CHECK IF NECESSARY ENVIROMENTAL VARIABLES ARE PRESENT
   if (!process.env.JWT_SECRET) throw new Error("JWT_KEY variable is undefined");
   if (!process.env.MONGO_URI)
