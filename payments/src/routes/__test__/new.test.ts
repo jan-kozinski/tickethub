@@ -63,7 +63,7 @@ it("returns a 400 when purchasing a cancelled order", async () => {
     .expect(400);
 });
 
-it("returns a 201 with walid iputs", async () => {
+it("returns a 201 with valid iputs", async () => {
   const user = {
     id: mongoose.Types.ObjectId().toHexString(),
     email: "test@test.com",
