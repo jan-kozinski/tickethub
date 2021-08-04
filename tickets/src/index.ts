@@ -6,6 +6,7 @@ import { OrderCreatedListener } from "./events/listeners/orderCreatedListener";
 
 // Startup function
 const start = async () => {
+  console.log("starting up...");
   //CHECK IF NECCESSARY ENVIROMENTAL VARIABLES ARE PRESENT
 
   if (!process.env.JWT_SECRET) throw new Error("JWT_KEY variable is undefined");

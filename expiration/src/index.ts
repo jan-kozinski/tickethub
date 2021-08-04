@@ -3,6 +3,7 @@ import { OrderCreatedListener } from "./events/listeners/orderCreatedListener";
 
 // Startup function
 const start = async () => {
+  console.log("starting up...");
   //CHECK IF NECCESSARY ENVIROMENTAL VARIABLES ARE PRESENT
 
   const envVariables = [

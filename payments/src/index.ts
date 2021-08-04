@@ -6,6 +6,7 @@ import { natsWrapper } from "./NatsWrapper";
 
 // Startup function
 const start = async () => {
+  console.log("starting up...");
   //CHECK IF NECCESSARY ENVIROMENTAL VARIABLES ARE PRESENT
   const envVariables = [
     "JWT_SECRET",
