@@ -17,11 +17,11 @@ AppComponent.getInitialProps = async (appContext) => {
   const { ctx: context } = appContext;
   const client = buildClient(context);
   let data;
-  try {
-    let data = await client.get("/api/users/currentuser");
-  } catch (error) {
-    console.error("-----------\n", error, "\n---------");
-  }
+  // try {
+  //   data = await client.get("/api/users/currentuser");
+  // } catch (error) {
+  //   console.error("-----------\n", error, "\n---------");
+  // }
 
   let pageProps;
   if (!data) data = { currentUser: null };
