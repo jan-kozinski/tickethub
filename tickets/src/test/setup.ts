@@ -1,12 +1,11 @@
 import { MongoMemoryServer } from "mongodb-memory-server";
 import mongoose from "mongoose";
-import { app } from "../app";
 
 jest.mock("../NatsWrapper");
 
 let mongo: any;
 beforeAll(async () => {
-  process.env.JWT_SECRET = "jebac disa";
+  process.env.JWT_SECRET = "a secret";
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
   mongo = await MongoMemoryServer.create();

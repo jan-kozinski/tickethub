@@ -1,5 +1,3 @@
-import { connect } from "mongoose";
-
 export const natsWrapper = {
   client: {
     publish: jest

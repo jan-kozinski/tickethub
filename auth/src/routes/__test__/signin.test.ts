@@ -1,7 +1,7 @@
 import request from "supertest";
 import { app } from "../../app";
 
-it("fails whe na email that does not exists is supplied", async () => {
+it("fails when an email that does not exists is supplied", async () => {
   await request(app)
     .post("/api/users/signin")
     .send({
@@ -28,7 +28,7 @@ it("fails when an incorrect password is supplied", async () => {
     .expect(400);
 });
 
-it("succeeds when an legit credentials are supplied", async () => {
+it("succeeds when legit credentials are supplied", async () => {
   await request(app)
     .post("/api/users/signup")
     .send({

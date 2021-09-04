@@ -5,7 +5,6 @@ import { OrderStatus } from "@dzony12-tickethub/common";
 import { Order } from "../../models/Order";
 import { signin } from "../../test/signin";
 import { stripe } from "../../stripe";
-import { Payment } from "../../models/Payment";
 
 jest.mock("../../stripe");
 
