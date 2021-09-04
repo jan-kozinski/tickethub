@@ -28,7 +28,7 @@ it("marks an order as cancelled", async () => {
 
 it("emits an order cancelled event", async () => {
   const ticket = Ticket.build({
-    title: "Talon for whores and balloon",
+    title: "Talon for a circus show",
     price: 69,
   });
   await ticket.save();

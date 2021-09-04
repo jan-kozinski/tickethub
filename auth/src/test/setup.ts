@@ -1,10 +1,9 @@
 import { MongoMemoryServer } from "mongodb-memory-server";
 import mongoose from "mongoose";
-import { app } from "../app";
 
 let mongo: any;
 beforeAll(async () => {
-  process.env.JWT_SECRET = "jebac disa";
+  process.env.JWT_SECRET = "a secret";
 
   mongo = await MongoMemoryServer.create();
   const mongoUri = await mongo.getUri();

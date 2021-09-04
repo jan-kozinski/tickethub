@@ -7,7 +7,7 @@ it("fetches the order", async () => {
   // Create a ticket
 
   const ticket = Ticket.build({
-    title: "Berlin Brothel entry ticket",
+    title: "Hotel Bristol entry ticket",
     price: 12000,
   });
   await ticket.save();
@@ -33,7 +33,7 @@ it("returns an error if one user tries to fetch another users order", async () =
   // Create a ticket
 
   const ticket = Ticket.build({
-    title: "Berlin Brothel entry ticket",
+    title: "Hotel Bristol entry ticket",
     price: 12000,
   });
   await ticket.save();
